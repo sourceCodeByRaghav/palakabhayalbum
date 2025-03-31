@@ -28,7 +28,7 @@ function Kirtan() {
           </p>
           <div className="trailer-container">
             <iframe 
-              src="/videos/kirtan/1.mp4"
+              src={`${process.env.PUBLIC_URL}/videos/kirtan/1.mp4`}
               width="640" 
               height="360" 
               allow="autoplay"
@@ -37,10 +37,10 @@ function Kirtan() {
           </div>
           <div class="video-container">
   <div class="small-video">
-  <video src="/videos/kirtan/2.mp4" controls loop></video>
+  <video src={`${process.env.PUBLIC_URL}/videos/kirtan/2.mp4`} controls loop></video>
   </div>
   <div class="small-video">
-  <video src="/videos/kirtan/4.mp4" controls loop autoPlay></video>
+  <video src={`${process.env.PUBLIC_URL}/videos/kirtan/4.mp4`} controls loop autoPlay></video>
 </div>
 </div>
           <Gallery images={kirtanPhotos} />

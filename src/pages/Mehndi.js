@@ -45,7 +45,7 @@ function Mehndi() {
         </p>
         <div className="trailer-container">
             <iframe 
-              src="/videos/mehndi/mehndi.mp4"
+              src={`${process.env.PUBLIC_URL}/videos/mehndi/mehndi.mp4`}
               width="640" 
               height="360" 
               allow="autoplay"

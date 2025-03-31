@@ -22,7 +22,7 @@ function Haldi() {
         </p>
         <div className="trailer-container">
             <iframe 
-              src="/videos/haldi/haldi.mp4"
+              src={`${process.env.PUBLIC_URL}/videos/haldi/haldi.mp4`}
               width="640" 
               height="360" 
               allow="autoplay"
