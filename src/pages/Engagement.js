@@ -2,13 +2,13 @@ import React from 'react';
 import Gallery from '../components/Gallery';
 
 const engagementPhotos = [
+  `${process.env.PUBLIC_URL}/images/engagement/couple2.jpg`,
   `${process.env.PUBLIC_URL}/images/engagement/rings.jpg`,
   `${process.env.PUBLIC_URL}/images/engagement/groom1.jpg`,
   `${process.env.PUBLIC_URL}/images/engagement/bride1.jpg`,
   `${process.env.PUBLIC_URL}/images/engagement/groom2.jpg`,
   `${process.env.PUBLIC_URL}/images/engagement/bride2.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/couple1.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/couple2.jpg`
+  `${process.env.PUBLIC_URL}/images/engagement/couple1.jpg`
 ];
 
 function Engagement() {

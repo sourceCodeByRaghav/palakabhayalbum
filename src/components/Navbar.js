@@ -24,7 +24,8 @@ function Navbar() {
         <li><Link to="/shagun" onClick={() => setIsOpen(false)}>Shagun</Link></li>
         <li><Link to="/haldi" onClick={() => setIsOpen(false)}>Haldi</Link></li>
         <li><Link to="/wedding" onClick={() => setIsOpen(false)}>Wedding</Link></li>
-        {/* <li><Link to="/welcome" onClick={() => setIsOpen(false)}>Welcome</Link></li> */}
+        <li><Link to="/grihaPravesh" onClick={() => setIsOpen(false)}>GrihaPravesh</Link></li>
+        <li><Link to="/dj-night" onClick={() => setIsOpen(false)}>DJNight</Link></li>
       </ul>
     </nav>
   );

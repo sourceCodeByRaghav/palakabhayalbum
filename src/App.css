@@ -305,8 +305,10 @@ body, html {
 
 .google-drive-btn-container {
   display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .google-drive-btn {
@@ -416,3 +418,42 @@ body, html {
   font-weight: 500;
   color: #b76e79;
 }
+
+.google-drive-btn.stacked-text-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.text-stack {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.text-stack .secondary-lang {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; 
+}
+
+.small-video {
+  width: 48%; 
+  height: 35vh; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.small-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
