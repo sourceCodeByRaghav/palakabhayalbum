@@ -5,8 +5,59 @@ import Gallery from '../components/Gallery';
 const shagunPhotos = [
   `${process.env.PUBLIC_URL}/images/shagun/1.jpg`,
   `${process.env.PUBLIC_URL}/images/shagun/2.jpg`,
-  // Add more images
+  `${process.env.PUBLIC_URL}/images/shagun/3.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/4.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/5.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/6.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/7.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/8.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/9.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/10.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/11.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/12.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/13.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/14.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/15.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/16.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/17.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/18.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/19.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/20.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/21.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/22.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/23.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/24.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/25.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/26.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/27.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/29.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/28.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/30.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/31.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/32.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/33.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/34.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/35.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/36.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/37.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/38.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/39.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/40.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/41.jpg`,
+  `${process.env.PUBLIC_URL}/images/shagun/42.jpg`
 ];
+
+const fetchCompletePhotoAlbumSetOne = () => {
+  window.open('https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/4-shagun-simar', '_blank');
+};
+
+const fetchCompletePhotoAlbumSetTwo = () => {
+  window.open('https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/5-shagun-kartik', '_blank');
+};
+
+const fetchPersonalPhotoCollection = () => {
+  window.open('https://gallery.shivramlab.com/facerec/abhay-palak', '_blank');
+}
 
 function Shagun() {
   return (
@@ -21,6 +72,85 @@ function Shagun() {
             with the exchange of gifts and blessings from elders.
           </p>
           <Gallery images={shagunPhotos} />
+          <div className="google-drive-btn-container">
+            <button 
+              className="google-drive-btn" 
+              onClick={fetchCompletePhotoAlbumSetOne}
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="google-drive-icon"
+              >
+                <path d="M12.51 3.3c-.18-.14-.39-.3-.51-.3-.12 0-.33.16-.51.3L3 9l4.14 6h9.72L21 9l-8.49-5.7z"></path>
+                <path d="M12 22l5-8H7l5 8z"></path>
+                <path d="M3 9l5 8 3-4"></path>
+              </svg>
+              View Our Complete Photo Album Set 1
+            </button>
+            
+            <button 
+              className="google-drive-btn" 
+              onClick={fetchCompletePhotoAlbumSetTwo}
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="google-drive-icon"
+              >
+                <path d="M12.51 3.3c-.18-.14-.39-.3-.51-.3-.12 0-.33.16-.51.3L3 9l4.14 6h9.72L21 9l-8.49-5.7z"></path>
+                <path d="M12 22l5-8H7l5 8z"></path>
+                <path d="M3 9l5 8 3-4"></path>
+              </svg>
+              View Our Complete Photo Album Set 2
+            </button>
+
+            <button 
+              className="google-drive-btn stacked-text-btn" 
+              onClick={fetchPersonalPhotoCollection}
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="google-drive-icon"
+              >
+                <path d="M9 3H5a2 2 0 0 0-2 2v4"></path>
+                <path d="M9 21H5a2 2 0 0 1-2-2v-4"></path>
+                <path d="M19 3h-4"></path>
+                <path d="M19 21h-4"></path>
+                <circle cx="12" cy="9" r="2"></circle>
+                <path d="M10 14v0a2 2 0 0 0 4 0v0"></path>
+                <path d="M18 8.5v7.4"></path>
+                <path d="M12.5 18.2v.1"></path>
+              </svg>
+              <div className="text-stack">
+                <span>Find Your Photos with Face Scan</span>
+                {/* <span className="secondary-lang">फेस स्कैन से अपनी तस्वीरें खोजें</span>
+                <span className="secondary-lang">ਫੇਸ ਸਕੈਨ ਨਾਲ ਆਪਣੀਆਂ ਫੋਟੋਆਂ ਲੱਭੋ</span> */}
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>
