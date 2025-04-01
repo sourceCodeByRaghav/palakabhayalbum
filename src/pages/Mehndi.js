@@ -53,6 +53,7 @@ function Mehndi() {
             ></iframe>
           </div>
         <Gallery images={photos} />
+        <div className="separator"></div>
         <div className="google-drive-btn-container">
             <button 
               className="google-drive-btn" 

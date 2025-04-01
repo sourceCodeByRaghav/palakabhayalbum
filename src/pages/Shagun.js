@@ -72,6 +72,7 @@ function Shagun() {
             with the exchange of gifts and blessings from elders.
           </p>
           <Gallery images={shagunPhotos} />
+          <div className="separator"></div>
           <div className="google-drive-btn-container">
             <button 
               className="google-drive-btn" 

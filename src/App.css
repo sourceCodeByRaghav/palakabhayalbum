@@ -199,6 +199,13 @@ body, html {
   border-radius: 2px;
 }
 
+.separator-blank {
+  width: 80px;
+  height: 3px;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
 .description {
   font-size: 1.1rem;
   color: #6a6a6a;
@@ -248,26 +255,50 @@ body, html {
     padding: 1rem;
   }
 
+  /* Fixed Gallery Grid for Mobile */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .gallery-item {
+    aspect-ratio: 1;
+    min-height: 0;
+  }
+
+  /* Optimized Button Layout */
+  .google-drive-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Adjusted Video Container */
+  .trailer-container {
+    height: 40vh;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Improved Content Padding */
+  .love-story-content {
+    padding: 1.5rem 1rem;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Optimized Typography */
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  .trailer-container {
-    height: 50vh;
-    margin-bottom: 2rem;
-  }
-
-  .love-story-content {
-    padding: 2rem;
-    margin: 1rem;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  .description {
+    font-size: 1rem;
   }
 }
 
@@ -456,4 +487,3 @@ body, html {
   height: 100%;
   object-fit: cover; 
 }
-

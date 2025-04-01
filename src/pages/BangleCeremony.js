@@ -54,6 +54,7 @@ function BangleCeremony() {
 ></iframe>
           </div>
           <Gallery images={banglePhotos} />
+          <div className="separator"></div>
           <div className="google-drive-btn-container">
             <button 
               className="google-drive-btn" 

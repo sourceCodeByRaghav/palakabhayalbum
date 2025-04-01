@@ -74,6 +74,7 @@ function Saint() {
             ></iframe>
           </div>
         <Gallery images={girlsPhotos} />
+        <div className="separator"></div>
         <div className="google-drive-btn-container">
             <button 
               className="google-drive-btn" 
@@ -130,7 +131,7 @@ function Saint() {
               </div>
             </button>
           </div>
-        
+          <div className="separator-blank"></div>
         <p className="subtitle">Boys' Side Moments</p>
         <div className="trailer-container">
         <iframe 
@@ -142,6 +143,7 @@ function Saint() {
 ></iframe>
           </div>
         <Gallery images={boysPhotos} /> 
+        <div className="separator"></div>
         <div className="google-drive-btn-container">
             <button 
               className="google-drive-btn" 

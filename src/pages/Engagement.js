@@ -65,7 +65,7 @@ function Engagement() {
             ></iframe>
           </div>
           <Gallery images={engagementPhotos} />
-          
+          <div className="separator"></div>
           <div className="google-drive-btn-container">
             <button 
               className="google-drive-btn" 
