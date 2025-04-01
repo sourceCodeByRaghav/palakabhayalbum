@@ -31,6 +31,17 @@ function BangleCeremony() {
             The bangle ceremony symbolizes prosperity and marital bliss. 
             The bride's hands were adorned with beautiful bangles as a mark of good fortune.
           </p>
+          <div className="trailer-container">
+          <iframe 
+  src="https://www.youtube.com/embed/rM3qja-bfjg"
+  width="640" 
+  height="360" 
+  allow="autoplay"
+  className="trailer-video"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+          </div>
           <Gallery images={banglePhotos} />
           <div className="google-drive-btn-container">
             <button 

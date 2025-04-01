@@ -2,13 +2,32 @@ import React from 'react';
 import Gallery from '../components/Gallery';
 
 const engagementPhotos = [
-  `${process.env.PUBLIC_URL}/images/engagement/couple2.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/rings.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/groom1.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/bride1.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/groom2.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/bride2.jpg`,
-  `${process.env.PUBLIC_URL}/images/engagement/couple1.jpg`
+  `${process.env.PUBLIC_URL}/images/engagement/1.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/2.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/3.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/4.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/5.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/6.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/7.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/8.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/9.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/10.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/11.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/12.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/13.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/14.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/15.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/16.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/17.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/18.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/19.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/20.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/21.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/22.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/23.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/24.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/25.jpg`,
+  `${process.env.PUBLIC_URL}/images/engagement/26.jpg`
 ];
 
 function Engagement() {
