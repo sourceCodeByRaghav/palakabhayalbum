@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -12,18 +11,18 @@ import Kirtan from './pages/Kirtan';
 import BangleCeremony from './pages/BangleCeremony';
 import Saint from './pages/Saint';
 import Shagun from './pages/Shagun';
+import DJNight from './pages/DJNight';
 import Footer from './components/Footer';
-import DJNight from './pages/DJNight'
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/palakabhayalbum">
       <div className="app-container">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/grihaPravesh" element={<GrihaPravesh />} />
+          <Route path="/grihapravesh" element={<GrihaPravesh />} />
           <Route path="/engagement" element={<Engagement />} />
           <Route path="/mehndi" element={<Mehndi />} />
           <Route path="/haldi" element={<Haldi />} />
