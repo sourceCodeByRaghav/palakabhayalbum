@@ -66,15 +66,12 @@ function Saint() {
         </p>
         <p className="subtitle">Girl's Side Moments</p>
         <div className="trailer-container">
-          <iframe 
-  src="https://www.youtube.com/embed/P04uRtV3z2Y"
-  width="640" 
-  height="360" 
-  allow="autoplay"
-  className="trailer-video"
-  frameborder="0"
-  allowfullscreen
-></iframe>
+        <iframe 
+              src="https://drive.google.com/file/d/1Wpm-5n-kfTvzckLh3FmLT7C7QT7p-JMH/preview" 
+              width="640" 
+              height="360" 
+              className="trailer-video"
+            ></iframe>
           </div>
         <Gallery images={girlsPhotos} />
         <div className="google-drive-btn-container">
@@ -136,13 +133,11 @@ function Saint() {
         
         <p className="subtitle">Boys' Side Moments</p>
         <div className="trailer-container">
-          <iframe 
-  src="https://www.youtube.com/embed/P04uRtV3z2Y"
+        <iframe 
+  src="https://www.youtube.com/embed/MfJMmTKAtjg?autoplay=1&mute=1"
   width="640" 
   height="360" 
-  allow="autoplay"
   className="trailer-video"
-  frameborder="0"
   allowfullscreen
 ></iframe>
           </div>

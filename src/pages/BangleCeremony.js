@@ -8,7 +8,18 @@ const banglePhotos = [
   `${process.env.PUBLIC_URL}/images/bangle/4.jpg`,
   `${process.env.PUBLIC_URL}/images/bangle/5.jpg`,
   `${process.env.PUBLIC_URL}/images/bangle/6.jpg`,
-  `${process.env.PUBLIC_URL}/images/bangle/7.jpg`
+  `${process.env.PUBLIC_URL}/images/bangle/7.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/8.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/9.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/10.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/11.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/12.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/13.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/14.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/15.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/16.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/17.jpg`,
+  `${process.env.PUBLIC_URL}/images/bangle/18.jpg`
 ];
 
 const fetchCompletePhotoAlbum = () => {
