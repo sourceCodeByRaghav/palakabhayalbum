@@ -54,6 +54,28 @@ function Mehndi() {
             className="trailer-video"
           ></iframe>
         </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/7pFE1ilA-Ik"
+            width="640"
+            height="360"
+            allow="autoplay"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/I3Cn3WeHFgE"
+            width="640"
+            height="360"
+            allow="autoplay"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
         <Gallery images={photos} />
         <div className="separator"></div>
         <div className="google-drive-btn-container">
