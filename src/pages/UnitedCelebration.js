@@ -43,6 +43,7 @@ function Home() {
             ></iframe>
           </div>
           <Gallery images={photos} />
+          <div className="separator-blank"></div>
           <p className="description">
             If you have any birthday photos/ videos, please send them to
             raghav.writes@icloud.com. Thank you
