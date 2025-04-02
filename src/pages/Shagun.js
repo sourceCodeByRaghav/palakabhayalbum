@@ -77,6 +77,28 @@ function Shagun() {
             The Shagun ceremony marked the formal acceptance of our union, with
             the exchange of gifts and blessings from elders.
           </p>
+          <div className="trailer-container">
+            <iframe
+              src="https://www.youtube.com/embed/I3Cn3WeHFgE"
+              width="640"
+              height="360"
+              allow="autoplay"
+              className="trailer-video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="trailer-container">
+            <iframe
+              src="https://www.youtube.com/embed/I3Cn3WeHFgE"
+              width="640"
+              height="360"
+              allow="autoplay"
+              className="trailer-video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
           <Gallery images={shagunPhotos} />
           <div className="separator"></div>
           <div className="google-drive-btn-container">

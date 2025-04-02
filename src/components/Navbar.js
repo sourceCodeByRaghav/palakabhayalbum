@@ -67,6 +67,11 @@ function Navbar() {
             DJ Night
           </Link>
         </li>
+        <li>
+          <Link to="/united-celebration" onClick={() => setIsOpen(false)}>
+            United Celebrations ✨
+          </Link>
+        </li>
       </ul>
     </nav>
   );
