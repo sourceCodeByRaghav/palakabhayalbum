@@ -26,13 +26,11 @@ function DJNight() {
         <p className="subtitle">Girl's Side Moments</p>
         <div className="trailer-container">
           <iframe
-            src="https://www.youtube.com/watch?v=hWOhA-61D2s"
+            src="https://drive.google.com/file/d/1xt7Z2Q5s--DjPgF3NJYQ-_jCElHp_gdY/preview"
             width="640"
             height="360"
             allow="autoplay"
             className="trailer-video"
-            frameborder="0"
-            allowfullscreen
           ></iframe>
         </div>
       </div>

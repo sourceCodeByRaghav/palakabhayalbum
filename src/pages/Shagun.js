@@ -79,7 +79,7 @@ function Shagun() {
           </p>
           <div className="trailer-container">
             <iframe
-              src="https://www.youtube.com/embed/I3Cn3WeHFgE"
+              src="https://www.youtube.com/embed/7k2VW3CzqRo"
               width="640"
               height="360"
               allow="autoplay"
@@ -90,7 +90,7 @@ function Shagun() {
           </div>
           <div className="trailer-container">
             <iframe
-              src="https://www.youtube.com/embed/I3Cn3WeHFgE"
+              src="https://www.youtube.com/embed/eMo6EOpBnjI"
               width="640"
               height="360"
               allow="autoplay"
