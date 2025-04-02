@@ -47,6 +47,8 @@ function Wedding() {
     `${process.env.PUBLIC_URL}/images/wedding/3/8.jpg`,
     `${process.env.PUBLIC_URL}/images/wedding/3/9.jpg`,
     `${process.env.PUBLIC_URL}/images/wedding/3/10.jpg`,
+    `${process.env.PUBLIC_URL}/images/wedding/3/11.jpg`,
+    `${process.env.PUBLIC_URL}/images/wedding/3/12.jpg`,
     `${process.env.PUBLIC_URL}/images/wedding/4/1.jpg`,
     `${process.env.PUBLIC_URL}/images/wedding/4/2.jpg`,
     `${process.env.PUBLIC_URL}/images/wedding/4/3.jpg`,
