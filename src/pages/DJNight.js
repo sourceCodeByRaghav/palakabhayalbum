@@ -33,6 +33,14 @@ function DJNight() {
             className="trailer-video"
           ></iframe>
         </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://drive.google.com/file/d/1rKwG-EhU0htVc3NzxnddbiJ74lc00RKo/preview"
+            width="640"
+            height="360"
+            className="trailer-video"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
