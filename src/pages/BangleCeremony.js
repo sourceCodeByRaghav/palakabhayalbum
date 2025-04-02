@@ -1,5 +1,5 @@
-import React from 'react';
-import Gallery from '../components/Gallery';
+import React from "react";
+import Gallery from "../components/Gallery";
 
 const banglePhotos = [
   `${process.env.PUBLIC_URL}/images/bangle/1.jpg`,
@@ -19,16 +19,19 @@ const banglePhotos = [
   `${process.env.PUBLIC_URL}/images/bangle/15.jpg`,
   `${process.env.PUBLIC_URL}/images/bangle/16.jpg`,
   `${process.env.PUBLIC_URL}/images/bangle/17.jpg`,
-  `${process.env.PUBLIC_URL}/images/bangle/18.jpg`
+  `${process.env.PUBLIC_URL}/images/bangle/18.jpg`,
 ];
 
 const fetchCompletePhotoAlbum = () => {
-  window.open('https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/1-bangle-jpeg', '_blank');
+  window.open(
+    "https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/1-bangle-jpeg",
+    "_blank"
+  );
 };
 
 const fetchPersonalPhotoCollection = () => {
-  window.open('https://gallery.shivramlab.com/facerec/abhay-palak', '_blank');
-}
+  window.open("https://gallery.shivramlab.com/facerec/abhay-palak", "_blank");
+};
 
 function BangleCeremony() {
   return (
@@ -39,37 +42,38 @@ function BangleCeremony() {
           <p className="subtitle">Traditional Blessings and Adornments</p>
           <div className="separator"></div>
           <p className="description">
-            The bangle ceremony symbolizes prosperity and marital bliss. 
-            The bride's hands were adorned with beautiful bangles as a mark of good fortune.
+            The bangle ceremony symbolizes prosperity and marital bliss. The
+            bride's hands were adorned with beautiful bangles as a mark of good
+            fortune.
           </p>
           <div className="trailer-container">
-          <iframe 
-  src="https://www.youtube.com/embed/rM3qja-bfjg"
-  width="640" 
-  height="360" 
-  allow="autoplay"
-  className="trailer-video"
-  frameborder="0"
-  allowfullscreen
-></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/rM3qja-bfjg"
+              width="640"
+              height="360"
+              allow="autoplay"
+              className="trailer-video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
           </div>
           <Gallery images={banglePhotos} />
           <div className="separator"></div>
           <div className="google-drive-btn-container">
-            <button 
-              className="google-drive-btn" 
+            <button
+              className="google-drive-btn"
               onClick={fetchCompletePhotoAlbum}
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="google-drive-icon"
               >
                 <path d="M12.51 3.3c-.18-.14-.39-.3-.51-.3-.12 0-.33.16-.51.3L3 9l4.14 6h9.72L21 9l-8.49-5.7z"></path>
@@ -78,21 +82,21 @@ function BangleCeremony() {
               </svg>
               View Our Complete Photo Album
             </button>
-            
-            <button 
-              className="google-drive-btn stacked-text-btn" 
+
+            <button
+              className="google-drive-btn stacked-text-btn"
               onClick={fetchPersonalPhotoCollection}
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="google-drive-icon"
               >
                 <path d="M9 3H5a2 2 0 0 0-2 2v4"></path>

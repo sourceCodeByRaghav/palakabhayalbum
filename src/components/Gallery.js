@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import ImageLightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+import React, { useState } from "react";
+import ImageLightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 const Gallery = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +10,8 @@ const Gallery = ({ images }) => {
     <div className="gallery-container">
       <div className="gallery-grid">
         {images.map((img, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="gallery-item"
             onClick={() => {
               setPhotoIndex(index);

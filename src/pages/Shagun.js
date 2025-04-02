@@ -1,6 +1,6 @@
 // pages/Shagun.js
-import React from 'react';
-import Gallery from '../components/Gallery';
+import React from "react";
+import Gallery from "../components/Gallery";
 
 const shagunPhotos = [
   `${process.env.PUBLIC_URL}/images/shagun/1.jpg`,
@@ -44,20 +44,26 @@ const shagunPhotos = [
   `${process.env.PUBLIC_URL}/images/shagun/39.jpg`,
   `${process.env.PUBLIC_URL}/images/shagun/40.jpg`,
   `${process.env.PUBLIC_URL}/images/shagun/41.jpg`,
-  `${process.env.PUBLIC_URL}/images/shagun/42.jpg`
+  `${process.env.PUBLIC_URL}/images/shagun/42.jpg`,
 ];
 
 const fetchCompletePhotoAlbumSetOne = () => {
-  window.open('https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/4-shagun-simar', '_blank');
+  window.open(
+    "https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/4-shagun-simar",
+    "_blank"
+  );
 };
 
 const fetchCompletePhotoAlbumSetTwo = () => {
-  window.open('https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/5-shagun-kartik', '_blank');
+  window.open(
+    "https://gallery.shivramlab.com/view/139m6t1kl3/abhay-palak/5-shagun-kartik",
+    "_blank"
+  );
 };
 
 const fetchPersonalPhotoCollection = () => {
-  window.open('https://gallery.shivramlab.com/facerec/abhay-palak', '_blank');
-}
+  window.open("https://gallery.shivramlab.com/facerec/abhay-palak", "_blank");
+};
 
 function Shagun() {
   return (
@@ -68,26 +74,26 @@ function Shagun() {
           <p className="subtitle">Blessings and Good Omens</p>
           <div className="separator"></div>
           <p className="description">
-            The Shagun ceremony marked the formal acceptance of our union, 
-            with the exchange of gifts and blessings from elders.
+            The Shagun ceremony marked the formal acceptance of our union, with
+            the exchange of gifts and blessings from elders.
           </p>
           <Gallery images={shagunPhotos} />
           <div className="separator"></div>
           <div className="google-drive-btn-container">
-            <button 
-              className="google-drive-btn" 
+            <button
+              className="google-drive-btn"
               onClick={fetchCompletePhotoAlbumSetOne}
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="google-drive-icon"
               >
                 <path d="M12.51 3.3c-.18-.14-.39-.3-.51-.3-.12 0-.33.16-.51.3L3 9l4.14 6h9.72L21 9l-8.49-5.7z"></path>
@@ -96,21 +102,21 @@ function Shagun() {
               </svg>
               View Our Complete Photo Album Set 1
             </button>
-            
-            <button 
-              className="google-drive-btn" 
+
+            <button
+              className="google-drive-btn"
               onClick={fetchCompletePhotoAlbumSetTwo}
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="google-drive-icon"
               >
                 <path d="M12.51 3.3c-.18-.14-.39-.3-.51-.3-.12 0-.33.16-.51.3L3 9l4.14 6h9.72L21 9l-8.49-5.7z"></path>
@@ -120,20 +126,20 @@ function Shagun() {
               View Our Complete Photo Album Set 2
             </button>
 
-            <button 
-              className="google-drive-btn stacked-text-btn" 
+            <button
+              className="google-drive-btn stacked-text-btn"
               onClick={fetchPersonalPhotoCollection}
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="google-drive-icon"
               >
                 <path d="M9 3H5a2 2 0 0 0-2 2v4"></path>

@@ -1,5 +1,5 @@
-import React from 'react';
-import Gallery from '../components/Gallery';
+import React from "react";
+import Gallery from "../components/Gallery";
 
 function GrihaPravesh() {
   const photos = [
@@ -14,7 +14,8 @@ function GrihaPravesh() {
         <p className="subtitle">Welcoming the couple home</p>
         <div className="separator"></div>
         <p className="description">
-          A traditional homecoming ritual that marks the bride's first entry into her new home, filled with blessings and auspiciousness.
+          A traditional homecoming ritual that marks the bride's first entry
+          into her new home, filled with blessings and auspiciousness.
         </p>
       </div>
     </div>

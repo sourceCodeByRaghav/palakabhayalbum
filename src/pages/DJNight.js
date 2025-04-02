@@ -1,5 +1,5 @@
-import React from 'react';
-import Gallery from '../components/Gallery';
+import React from "react";
+import Gallery from "../components/Gallery";
 
 function DJNight() {
   const girlsPhotos = [
@@ -19,22 +19,22 @@ function DJNight() {
         <p className="subtitle">A Night of Music and Celebration</p>
         <div className="separator"></div>
         <p className="description">
-          A high-energy night of music, dance, and unforgettable moments as both sides celebrate in their own way.
+          A high-energy night of music, dance, and unforgettable moments as both
+          sides celebrate in their own way.
         </p>
 
         <p className="subtitle">Girl's Side Moments</p>
         <div className="trailer-container">
-          <iframe 
-  src="https://www.youtube.com/watch?v=hWOhA-61D2s"
-  width="640" 
-  height="360" 
-  allow="autoplay"
-  className="trailer-video"
-  frameborder="0"
-  allowfullscreen
-></iframe>
-          </div>
-
+          <iframe
+            src="https://www.youtube.com/watch?v=hWOhA-61D2s"
+            width="640"
+            height="360"
+            allow="autoplay"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );
