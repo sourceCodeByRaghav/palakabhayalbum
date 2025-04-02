@@ -73,10 +73,24 @@ function Saint() {
         <p className="subtitle">Girl's Side Moments</p>
         <div className="trailer-container">
           <iframe
-            src="https://drive.google.com/file/d/1Wpm-5n-kfTvzckLh3FmLT7C7QT7p-JMH/preview"
+            src="https://www.youtube.com/embed/mikjOHKdeVE"
             width="640"
             height="360"
+            allow="autoplay"
             className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/cd80xGcmKbs"
+            width="640"
+            height="360"
+            allow="autoplay"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
           ></iframe>
         </div>
         <Gallery images={girlsPhotos} />
