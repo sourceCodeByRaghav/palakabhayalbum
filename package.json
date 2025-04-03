@@ -20,8 +20,8 @@
     "yet-another-react-lightbox": "6.4.0"
   },
   "scripts": {
-  "netlify-build": "rm -rf node_modules/ && npm cache clean --force && npm install --legacy-peer-deps && npm run build",
-  "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npx npm-force-resolutions",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,8 +45,7 @@
     "gh-pages": "^6.3.0"
   },
   "resolutions": {
-  "**/react": "^18.2.0",
-  "**/react-dom": "^18.2.0",
-  "**/react-scripts": "5.0.1"
+    "**/react": "^18.2.0",
+    "**/react-dom": "^18.2.0"
   }
 }
