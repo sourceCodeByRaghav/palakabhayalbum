@@ -4,16 +4,12 @@
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "18.20.1"
+  NODE_VERSION = "18.20.1"  # Recommended for React
   NPM_VERSION = "10.5.0"
-  GO_VERSION = "none"
-  CI = "false"
-  NPM_FLAGS = "--legacy-peer-deps"
+  GO_VERSION = "none"       # Explicitly disable Go
+  CI = "false"              # Prevents warnings from failing builds
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[context.production]
-  command = "npm install --legacy-peer-deps && npm run build"
