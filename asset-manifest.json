@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/palakabhayalbum/static/css/main.21291fb1.css",
+    "main.js": "/palakabhayalbum/static/js/main.2ec9da27.js",
+    "index.html": "/palakabhayalbum/index.html",
+    "main.21291fb1.css.map": "/palakabhayalbum/static/css/main.21291fb1.css.map",
+    "main.2ec9da27.js.map": "/palakabhayalbum/static/js/main.2ec9da27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21291fb1.css",
+    "static/js/main.2ec9da27.js"
+  ]
+}
