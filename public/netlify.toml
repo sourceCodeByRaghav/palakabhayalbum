@@ -6,7 +6,6 @@
 [build.environment]
   NODE_VERSION = "18.20.1"  # Recommended for React
   NPM_VERSION = "10.5.0"
-  GO_VERSION = "none"       # Explicitly disable Go
   CI = "false"              # Prevents warnings from failing builds
 
 [[redirects]]
