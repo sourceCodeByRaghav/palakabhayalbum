@@ -17,14 +17,10 @@
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^3.5.0",
-    "yet-another-react-lightbox": "^6.4.0"
+    "yet-another-react-lightbox": "6.4.0"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "netlify-build": "npm ci --legacy-peer-deps && npm run build",
+  "netlify-build": "rm -rf node_modules/ && npm cache clean --force && npm install --legacy-peer-deps && npm run build",
   "preinstall": "npx npm-force-resolutions"
   },
   "eslintConfig": {
