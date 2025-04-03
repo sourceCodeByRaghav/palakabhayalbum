@@ -17,7 +17,7 @@
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^3.5.0",
-    "yet-another-react-lightbox": "6.4.0"
+    "yet-another-react-lightbox": "^1.1.1"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
