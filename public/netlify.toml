@@ -1,6 +1,6 @@
 [build]
   command = "npm cache clean --force && npm install && npm run build"
-  publish = "dist"  # Change this if your build output folder is different
+  publish = "build"  # Changed to "build" since React creates a build folder, not dist
 
 [build.environment]
   NODE_VERSION = "18"
@@ -10,7 +10,7 @@
   node_bundler = "esbuild"
 
 [dev]
-  framework = "#custom"
+  framework = "create-react-app"  # Changed to specify the React framework
   command = "npm start"
   port = 8888
   targetPort = 3000
