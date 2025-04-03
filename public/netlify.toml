@@ -1,18 +1,8 @@
-# netlify.toml
 [build]
   command = "npm install --legacy-peer-deps && npm run build"
   publish = "build"
 
 [build.environment]
-  NODE_VERSION = "18.20.1"  # LTS version for React compatibility
+  NODE_VERSION = "18.20.1"
   NPM_VERSION = "10.5.0"
-  GO_VERSION = "none"        # Completely disable Go
-  CI = "false"               # Disable CI strictness
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[build]
-  command = "npm install --legacy-peer-deps --registry=https://registry.npmjs.org && npm run build"
+  CI = "false"

@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^14.5.2",
     "bootstrap": "^5.3.3",
     "framer-motion": "^12.6.2",
+    "is-number": "^7.0.0",
     "lucide-react": "^0.484.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.9",
@@ -17,11 +18,14 @@
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^3.5.0",
-    "yet-another-react-lightbox": "^1.1.1"
+    "yet-another-react-lightbox": "^3.22.0"
   },
   "scripts": {
+    "start": "react-scripts start",
     "preinstall": "npx npm-force-resolutions",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
