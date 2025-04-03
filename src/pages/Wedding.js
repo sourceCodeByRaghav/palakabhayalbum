@@ -151,6 +151,56 @@ function Wedding() {
           The most special day of our lives, where we unite in marriage and
           begin our journey together.
         </p>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/tK0MSZsottw"
+            width="640"
+            height="360"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/ohqxfmSj5JA"
+            width="640"
+            height="360"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/HKERqn0bmgY"
+            width="640"
+            height="360"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/OJuN0-dvN88"
+            width="640"
+            height="360"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="trailer-container">
+          <iframe
+            src="https://www.youtube.com/embed/IYfi3jXr59c"
+            width="640"
+            height="360"
+            className="trailer-video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
         <Gallery images={photos} />
         <div className="separator"></div>
         <div className="google-drive-btn-container">
