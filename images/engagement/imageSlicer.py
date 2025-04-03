@@ -1,39 +1,67 @@
 import os
+from pathlib import Path
+from PIL import Image
 import argparse
-import logging
 
-def convert_jpg_case_windows(directory, dry_run=False):
+def convert_jpg_to_png_inplace(delete_original=False, quality=85):
     """
-    Windows-specific JPG case converter that forces extension lowercase
+    Convert all JPG files in current directory to PNG
     """
     converted = 0
-    logger = logging.getLogger('JPG Converter')
-    logging.basicConfig(level=logging.INFO, format='%(message)s')
+    skipped = 0
+    errors = 0
 
-    for filename in os.listdir(directory):
-        if filename.upper().endswith(('.JPG', '.JPEG')):
-            base, ext = os.path.splitext(filename)
-            if ext != ext.lower():
-                new_name = f"{base}{ext.lower()}"
-                old_path = os.path.join(directory, filename)
-                new_path = os.path.join(directory, new_name)
-                
-                try:
-                    if not dry_run:
-                        os.rename(old_path, new_path)
-                        logger.info(f"Case changed: {filename} → {new_name}")
-                        converted += 1
-                    else:
-                        logger.info(f"[Dry Run] Would change: {filename} → {new_name}")
-                except Exception as e:
-                    logger.error(f"Error: {str(e)}")
+    current_dir = Path.cwd()
+    print(f"Processing files in: {current_dir}")
 
-    logger.info(f"\nTotal files converted: {converted}")
+    for jpg_file in current_dir.glob('*.JPG'):
+        try:
+            png_file = jpg_file.with_suffix('.png')
+            
+            if png_file.exists():
+                print(f"Skipped: {jpg_file.name} → {png_file.name} (exists)")
+                skipped += 1
+                continue
+
+            with Image.open(jpg_file) as img:
+                img.save(png_file, 'PNG', optimize=True, compress_level=quality)
+                print(f"Converted: {jpg_file.name} → {png_file.name}")
+                converted += 1
+
+            if delete_original:
+                jpg_file.unlink()
+                print(f"Deleted original: {jpg_file.name}")
+
+        except Exception as e:
+            print(f"Error converting {jpg_file.name}: {str(e)}")
+            errors += 1
+
+    print("\nConversion Report:")
+    print(f"Success: {converted}")
+    print(f"Skipped: {skipped}")
+    print(f"Errors: {errors}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Force .JPG extensions to lowercase on Windows")
-    parser.add_argument("dir", nargs="?", default=os.getcwd(), help="Target directory")
-    parser.add_argument("--dry-run", action="store_true", help="Preview changes")
-    args = parser.parse_args()
+    parser = argparse.ArgumentParser(
+        description='Convert JPG to PNG in current directory',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+    parser.add_argument('-d', '--delete', action='store_true',
+                      help='Delete original JPG files after conversion')
+    parser.add_argument('-q', '--quality', type=int, default=85,
+                      help='PNG compression level (0-100)', metavar='QUALITY')
     
-    convert_jpg_case_windows(args.dir, args.dry_run)
+    args = parser.parse_args()
+
+    # Verify Pillow installation
+    try:
+        from PIL import Image  # noqa: F401
+    except ImportError:
+        print("Error: Required Pillow library missing. Install with:")
+        print("pip install pillow")
+        exit(1)
+
+    convert_jpg_to_png_inplace(
+        delete_original=args.delete,
+        quality=args.quality
+    )
