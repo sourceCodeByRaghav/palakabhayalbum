@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import ImageLightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const Gallery = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <div className="gallery-container">
@@ -14,7 +14,7 @@ const Gallery = ({ images }) => {
             key={index}
             className="gallery-item"
             onClick={() => {
-              setPhotoIndex(index);
+              setCurrentIndex(index);
               setIsOpen(true);
             }}
           >
@@ -23,20 +23,13 @@ const Gallery = ({ images }) => {
         ))}
       </div>
 
-      {isOpen && (
-        <ImageLightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
-        />
-      )}
+      <Lightbox
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        slides={images.map((img) => ({ src: img }))}
+        index={currentIndex}
+        onView={({ index }) => setCurrentIndex(index)}
+      />
     </div>
   );
 };
