@@ -1,6 +1,9 @@
 [build]
   command = "npm install --legacy-peer-deps && npm run build"
-  environment = { NODE_VERSION = "18.17.1" }
+  environment = { 
+    NODE_VERSION = "20.13.1",  # LTS version that works best with React
+    NPM_FLAGS = "--legacy-peer-deps"  # Double protection
+  }
 
 [[redirects]]
   from = "/*"
