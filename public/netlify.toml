@@ -1,4 +1,8 @@
-[[redirect]]
-from="/*"
-to="index.html"
-status=200
+[build]
+  command = "npm install --legacy-peer-deps && npm run build"
+  environment = { NODE_VERSION = "18.17.1" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
