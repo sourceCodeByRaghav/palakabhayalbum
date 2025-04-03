@@ -33,7 +33,7 @@ def convert_mpo_to_jpeg(image_path):
         print(f"Error converting {image_path}: {e}")
         return False
 
-def reduce_image_size(image_path, max_size=10*1024*1024):
+def reduce_image_size(image_path, max_size=3*1024*1024):  # Changed to 3MB
     """Main processing function"""
     # First convert MPO files to JPEG
     if is_mpo_file(image_path):
@@ -49,7 +49,7 @@ def reduce_image_size(image_path, max_size=10*1024*1024):
 
             original_size = os.path.getsize(image_path)
             if original_size <= max_size:
-                print(f"Skipping {image_path} (already under 10MB)")
+                print(f"Skipping {image_path} (already under 3MB)")  # Updated message
                 return True
 
             # Optimization loop for JPEG
@@ -85,7 +85,7 @@ def reduce_image_size(image_path, max_size=10*1024*1024):
                     return True
                 scale -= 0.1
 
-            print(f"Failed to reduce {image_path} below 10MB")
+            print(f"Failed to reduce {image_path} below 3MB")  # Updated message
             return False
     except Exception as e:
         print(f"Error processing {image_path}: {e}")
